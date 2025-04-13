@@ -2,9 +2,9 @@
 
 ## How do I install these formulae?
 
-`brew install paul-schwendenman/magic-log-ui/magic-log-ui`
+`brew install paul-schwendenman/magic-log-ui/magic-log  `
 
-Or `brew tap paul-schwendenman/magic-log-ui` and then `brew install magic-log-ui`.
+Or `brew tap paul-schwendenman/magic-log-ui` and then `brew install magic-log`.
 
 ## Documentation
 
