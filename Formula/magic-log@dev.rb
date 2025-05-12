@@ -7,5 +7,14 @@ class MagicLogATDev < Formula
 
   def install
     bin.install "magic-log-darwin-arm64" => "magic-log"
+
+    bash_output = Utils.safe_popen_read("#{bin}/magic-log", "completion", "bash")
+    (bash_completion/"magic-log").write bash_output
+
+    zsh_output = Utils.safe_popen_read("#{bin}/magic-log", "completion", "zsh")
+    (zsh_completion/"_magic-log").write zsh_output
+
+    fish_output = Utils.safe_popen_read("#{bin}/magic-log", "completion", "fish")
+    (fish_completion/"magic-log.fish").write fish_output
   end
 end
